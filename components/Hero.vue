@@ -18,18 +18,18 @@ export default {
 <style scoped>
     .Hero {
         height: 80vh;
-        max-width: 100%;
+        max-width: 100vw;
         position: relative;
         display: flex;
-        padding: 0 1em;
+        padding: 2em 1em;
         align-items: center;
         justify-content: space-between;
     }
     .text-container {
-        width: 50%;
+        width: 80vw;
     }
     .header {
-        font-family: Helvetica, Arial, sans-serif;
+        font-family: 'Arima Madurai', Helvetica, sans-serif;
         font-size: 5rem;
     }
     .snippet {
@@ -39,34 +39,35 @@ export default {
     .image {
         position: absolute;
         max-height: 80vh;
-        margin-top: 0rem;
-        margin-right: 0vw;
         z-index: -1;
     }
+    /*
     .overlay {
         background: rgba(0, 0, 0, 0);
         position: absolute;
         width: 100%;
         height: 100%;
         top: 0;
-    }
+    }*/
     .button {
-        margin: 2rem 0rem 4rem 0rem;
         padding: 1rem 4rem;
-        border-radius: 100rem;
+        margin: 2rem 0rem 4rem 0rem;
+        /*border-radius: 100rem;
         background-color: rgb(105, 93, 117);
-        color: white;
+        color: white;*/
+        font-weight: 600;
         width: 20rem;
-        font-weight: 700;
         transition: 0.5s;
     }
     .button:hover {
         width: 21.5rem;
+        letter-spacing: 0.08em;
     }
 
     @media (max-width: 500px) {
         .Hero {
             height: 80vh;
+            width: 100vw;
         }
     }
 </style>

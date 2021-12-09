@@ -41,25 +41,25 @@ export default {
         align-items: center;
         justify-content: space-between;
         margin: 4rem 0 1rem 0;
-        
+        max-width: 100vw;
     }
     .image {
         max-width: 100vw;
-        margin: 0 -3rem;
+        margin: 0;
     }
     .header1 {
-        margin: -3rem 0 -2rem 0;
+        margin: -3rem 0 -2rem 1rem;
         color:white;
     }
     .header2 {
-        margin: -2rem 0 0 0;
+        margin: -2rem 0 0 1rem;
         color:rgb(146, 100, 129);
     }
     .snippet {
-        margin: 4rem 0;
+        margin: 4rem 1rem;
     }
     .btn {
-        width: 100%;
+        width: 100vw;
         align-items: stretch;
     }
 

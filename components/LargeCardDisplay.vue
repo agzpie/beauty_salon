@@ -24,7 +24,19 @@
 
 <style scoped>
 .container {
-    margin-top: 3rem;
+    margin: 3rem 0 1rem 0;
+    background-color: aqua;
+    padding: 1rem;
+
+        /*
+    display: inline;
+    display: grid;
+    display: inline-grid;
+    display: flow-root;
+        align-items: center;
+        justify-content: space-between;
+        margin: 4rem 0 1rem 0;*/
+    
 }
     .header {
         font-weight: 700;

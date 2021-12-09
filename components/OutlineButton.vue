@@ -12,6 +12,7 @@ export default {
 
 <style>
   .button {
+    font-family: 'Arima Madurai';
     font-variant: small-caps;
     display: inline-block;
     margin: 0.5rem;

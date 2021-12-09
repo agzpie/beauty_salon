@@ -24,7 +24,7 @@ export default {
 
 <style>
 .top-nav {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.747);
     border-bottom: 1px solid rgb(236, 233, 233);
 }
 

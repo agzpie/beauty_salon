@@ -3,9 +3,6 @@
     <Navbar />
     <Hero />
     
-    <!-- -->
-
-    
     <Card 
       v-for="cardInfo in landingPageInfo"
       :key="cardInfo.id"
@@ -16,7 +13,6 @@
       :key="cardInfo.id"
       :cardsSection="cardInfo"
     /> 
-    
     
   </div>  
 </template>
@@ -35,9 +31,20 @@ export default {
 </script>
 
 
-<style scoped>
+<style>
 .container {
-  margin: 2rem 0 2rem 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0rem;
+  font-family: Roboto, sans-serif;
+  font-weight: 100;
+  background-color: rgb(136, 212, 212);
+  max-width: 100vw;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+    
 }
 
 

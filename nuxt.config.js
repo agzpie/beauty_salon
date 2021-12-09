@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'strefa',
+    title: 'beauty salon',
     htmlAttrs: {
       lang: 'en'
     },
@@ -34,7 +34,20 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
+    '@nuxtjs/google-fonts',
   ],
+
+  googleFonts: {
+    families: {
+      'Arima+Madurai': true,
+      Roboto: true,
+      Lato: [100, 300],
+      Raleway: {
+        wght: [100, 400],
+        ital: [100]
+      },
+    }
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
