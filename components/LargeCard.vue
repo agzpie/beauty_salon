@@ -35,6 +35,6 @@
         margin-top: 0.4rem;
     }
     .snippet {
-        color: grey
+        color: rgb(46, 45, 45)
     }
 </style>

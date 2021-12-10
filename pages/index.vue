@@ -32,6 +32,13 @@ export default {
 
 
 <style>
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  background-color: #f5f2f0;
+}
 .container {
   padding-left: 0;
   padding-right: 0;
@@ -39,13 +46,14 @@ export default {
   margin-right: 0rem;
   font-family: Roboto, sans-serif;
   font-weight: 100;
-  background-color: rgb(136, 212, 212);
   max-width: 100vw;
   position: relative;
   align-items: center;
   justify-content: space-between;
-    
+  
 }
+
+
 
 
 </style>

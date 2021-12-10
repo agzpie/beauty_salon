@@ -39,7 +39,7 @@ export default {
 
   googleFonts: {
     families: {
-      'Arima+Madurai': true,
+      'Arima+Madurai': [300, 100],
       Roboto: true,
       Lato: [100, 300],
       Raleway: {

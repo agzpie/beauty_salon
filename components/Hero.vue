@@ -5,7 +5,6 @@
             <p class="snippet">Book a visit at the best salon in town!</p>
             <button class="button btn">book here</button>
         </div>
-        <img src="~assets/blob.svg" alt="team picture" class="image">
     </div>  
 </template>
 
@@ -17,57 +16,101 @@ export default {
 
 <style scoped>
     .Hero {
-        height: 80vh;
+        height: auto;
         max-width: 100vw;
         position: relative;
         display: flex;
-        padding: 2em 1em;
-        align-items: center;
-        justify-content: space-between;
+        flex-direction: column;
+        padding: 10em 2em;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: -3.5em;
+        
+        background-image:#f5f2f0;background-image:  
+        radial-gradient(at 67% 29%, #f5f2f0 0, transparent 52%),  
+        radial-gradient(at 61% 57%, hsla(279,33%,67%,1) 0, transparent 40%),  
+        radial-gradient(at 48% 46%, hsla(342,67%,73%,1) 0, transparent 56%);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+       /* url(../assets/noise.png);
+       #b38fc7
+       #e88ca8
+       527A66
+       568C9C
+       9C4E65
+
+       */
+        
+        
+    }
+    @keyframes gradient {
+        0% {
+		background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
     }
     .text-container {
         width: 80vw;
     }
     .header {
         font-family: 'Arima Madurai', Helvetica, sans-serif;
-        font-size: 5rem;
+        font-size: 7em;
+        font-weight: 100;
+        color: #6B3646;
+        mix-blend-mode:multiply;
     }
     .snippet {
-        color: grey;
+        color: rgb(78, 59, 83);
         font-size: 1.25rem;
+        font-family: 'Arima Madurai';
+        font-weight: 300;
+        mix-blend-mode:multiply;
+        margin-bottom: 1em;
     }
-    .image {
-        position: absolute;
-        max-height: 80vh;
-        z-index: -1;
-    }
-    /*
-    .overlay {
-        background: rgba(0, 0, 0, 0);
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-    }*/
+
     .button {
-        padding: 1rem 4rem;
-        margin: 2rem 0rem 4rem 0rem;
-        /*border-radius: 100rem;
-        background-color: rgb(105, 93, 117);
-        color: white;*/
-        font-weight: 600;
+        padding: 1rem 3rem;
+        margin-bottom: 4rem;
+        font-weight: 500;
         width: 20rem;
         transition: 0.5s;
+        mix-blend-mode:multiply;
     }
     .button:hover {
         width: 21.5rem;
         letter-spacing: 0.08em;
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 800px) {
         .Hero {
-            height: 80vh;
+            height: 100vh;
             width: 100vw;
+        }
+        .header {
+            font-size: 5em;
+        }
+    }
+    @media (max-width: 565px) {
+        .Hero {
+            height: 100vh;
+            width: 100vw;
+            padding-top: 6rem;
+        }
+        .header {
+            font-size: 4em;
+            margin-bottom: 0.5em;
+        }
+        .button {
+            width: 10rem;
+            padding: 1rem 2rem;
+        }
+        .snippet {
+            margin-top: 0rem;
         }
     }
 </style>

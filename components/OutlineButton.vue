@@ -17,20 +17,20 @@ export default {
     display: inline-block;
     margin: 0.5rem;
     padding: 0.75em 1.5em;
-    border: 1px solid rebeccapurple;
+    border: 1px solid #6B3646;
     border-radius: 3px;
     background-color: transparent;
-    color:rgb(88, 68, 105);
+    color:#6B3646;
     font-size: 1.25em;
-    font-weight: 400;
+    font-weight: 600;
     transition: 0.4s;
     letter-spacing: 0.02em;
   }
 
   .button:hover {
-    background: rebeccapurple;
+    background: #6B3646;
     color: whitesmoke;
     padding: 1em 2em;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.05em;
   }
 </style>

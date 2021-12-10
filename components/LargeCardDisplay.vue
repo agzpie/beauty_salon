@@ -1,8 +1,8 @@
 <template>
     <div class="container">
-        <h4 class="header">
+        <h2 class="header">
             {{ cardsSection.title }}
-        </h4>
+        </h2>
         <p class="snippet">
             {{ cardsSection.snippet }}
         </p>
@@ -25,25 +25,17 @@
 <style scoped>
 .container {
     margin: 3rem 0 1rem 0;
-    background-color: aqua;
-    padding: 1rem;
-
-        /*
-    display: inline;
-    display: grid;
-    display: inline-grid;
-    display: flow-root;
-        align-items: center;
-        justify-content: space-between;
-        margin: 4rem 0 1rem 0;*/
-    
+    padding: 1rem;    
 }
     .header {
-        font-weight: 700;
-        font-size: 1.5rem;
+        font-size: 2rem;
+        font-family: 'Arima Madurai';
+        font-weight: 300;
     }
     .snippet {
-        color: grey;
+        font-family: Roboto;
+        font-weight: 300;
+        color: rgb(39, 38, 38);
         margin-bottom: 1.5rem;
     }
     .cards-container {
