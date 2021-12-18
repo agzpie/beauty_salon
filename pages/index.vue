@@ -13,11 +13,13 @@
       :key="cardInfo.id"
       :cardsSection="cardInfo"
     /> 
+    <!--<Booking /> -->
     
   </div>  
 </template>
 
 <script>
+
 import { largeCardSections } from "@/assets/data.js"
 import { landingPageSections } from "@/assets/landingData.js"
 export default {
