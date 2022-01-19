@@ -3,11 +3,13 @@
     <Navbar />
     <Hero />
     
-    <Card 
-      v-for="cardInfo in landingPageInfo"
-      :key="cardInfo.id"
-      :card="cardInfo"
-    />
+    <div class="cards">
+      <Card 
+        v-for="cardInfo in landingPageInfo"
+        :key="cardInfo.id"
+        :card="cardInfo"
+      />
+    </div>
     <LargeCardDisplay 
       v-for="cardInfo in largeCardInfo"
       :key="cardInfo.id"
@@ -40,19 +42,21 @@ html {
 body {
   min-height: 100%;
   background-color: #f5f2f0;
+  margin-left: 0%;
+  margin-right: 0%;
 }
 .container {
   padding-left: 0;
   padding-right: 0;
-  margin-left: 0;
-  margin-right: 0rem;
   font-family: Roboto, sans-serif;
   font-weight: 100;
   max-width: 100vw;
   position: relative;
   align-items: center;
   justify-content: space-between;
-  
+}
+.cards {
+  border-top: 1px solid #6B3646;
 }
 
 

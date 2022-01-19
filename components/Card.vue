@@ -1,17 +1,20 @@
 <template>
-    <div class="card-container">
-        <kinesis-container event="scroll">
-            <kinesis-element :strength="10">
-              <img :src="require(`@/assets/images/${ card.image || 'image_1.jpg'}`)" alt="some image" class="image">
-            </kinesis-element>
+    
+        <kinesis-container event="scroll" class="flex-container">            
+            <div class="image-container">
+                <kinesis-element :strength="150" :type="translate" axis="y">
+                    <b-img :src="require(`@/assets/images/${ card.image || 'image_1.jpg'}`)" fluid alt="some image" class="image"></b-img>
+                </kinesis-element>
+            </div>
+            <div class="headers">
+                <kinesis-element :strength="-150" :type="translate" axis="y">
+                <h1 class="header1"> {{ card.title }} </h1>
+                </kinesis-element>
 
-            <kinesis-element :strength="-150" :type="translate" axis="y">
-              <h1 class="header1"> {{ card.title }} </h1>
-            </kinesis-element>
-
-            <kinesis-element :strength="-250" :type="depth_inv" axis="y">  
-              <h1 class="header2"> {{ card.title }} </h1>
-            </kinesis-element>
+                <kinesis-element :strength="-250" :type="depth_inv" axis="y">  
+                <h1 class="header2"> {{ card.title }} </h1>
+                </kinesis-element>
+            </div>
             
             <div class="content">
                 <p class="snippet"> {{ card.snippet }} </p>
@@ -21,7 +24,7 @@
             </div>
 
         </kinesis-container>
-    </div> 
+
 </template>
 
 <script>
@@ -37,14 +40,15 @@ export default {
 </script>
 
 <style>
-    .card-container {
+    .flex-container {
         display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
         margin: 0rem;
-        max-width: 100vw;
-        padding-bottom: 3rem;
-
+        width: 100vw;
+        min-height: 100vh;
+        border-bottom: 1px solid #6B3646;
         background-image:#f5f2f0;background-image:  
         radial-gradient(at 67% 29%, #f5f2f0 0, transparent 52%),  
         radial-gradient(at 61% 57%, hsla(279,33%,67%,1) 0, transparent 40%),  
@@ -63,9 +67,19 @@ export default {
             background-position: 0% 50%;
         }
     }
+    .image-container {
+        width: 50%;
+        overflow: hidden;
+    }
     .image {
-        max-width: 100vw;
-        margin: 0;
+        object-fit: cover;
+        border-right: 1px solid #6B3646;
+    }
+    .headers {
+        z-index: 5;
+        position: absolute;
+        top: 5rem;
+        left: 0;
     }
     .header1 {
         margin: -3rem 0 -2rem 1rem;
@@ -83,10 +97,10 @@ export default {
     }
     .content {
         display: flex;
-        flex-direction: row;
-        
+        flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
+        margin: 2rem;
     }
     .snippet {
         margin-top: 2rem;
@@ -99,7 +113,23 @@ export default {
         align-items: stretch;
     }
 
-    @media (max-width: 800px) {
+    @media (max-width: 1024px) {
+        .flex-container {
+            flex-direction: column;
+        }
+        .image-container {
+            width: 100%;
+            max-height: 100vh;
+            border-bottom: 1px solid #6B3646;
+        }
+        .image {
+            margin-top: -14rem; /* TODO center this */
+            object-fit: cover;
+            border: none;
+        }
+        .headers {
+            position: absolute;
+        }
         .content {
             flex-direction: column;
         }

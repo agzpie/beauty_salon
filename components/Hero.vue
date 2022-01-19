@@ -17,14 +17,13 @@ export default {
 <style scoped>
     .Hero {
         height: auto;
-        max-width: 100vw;
+        width: 100%;
         position: relative;
         display: flex;
         flex-direction: column;
         padding: 10em 2em;
         align-items: flex-start;
         justify-content: center;
-        margin-top: -3.5em;
         
         background-image:#f5f2f0;background-image:  
         radial-gradient(at 67% 29%, #f5f2f0 0, transparent 52%),  
@@ -39,9 +38,7 @@ export default {
        568C9C
        9C4E65
 
-       */
-        
-        
+       */        
     }
     @keyframes gradient {
         0% {

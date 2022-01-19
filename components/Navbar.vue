@@ -1,5 +1,5 @@
 <template>
-        <b-navbar toggleable="md" type="light" sticky class="top-nav">
+        <b-navbar toggleable="md" type="light" class="top-nav">
             <b-navbar-brand href="#">Beauty Salon</b-navbar-brand>
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
             <b-collapse id="nav-collapse" is-nav>
@@ -24,10 +24,13 @@ export default {
 
 <style>
 .top-nav {
+    position: fixed;
+    width: 100vw;
     font-family: 'Arima Madurai';
     font-weight: 300;
     background-color: rgba(255, 255, 255, 0.205);
     border-bottom: 1px solid rgb(236, 233, 233);
+    z-index: 10;
 }
 
 </style>
