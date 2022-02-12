@@ -21,6 +21,12 @@ export const largeCardSections = [
           title: "Fire Extinguisher, Perfect for Pools",
           snippet: "If you ever find that your pool is on fire then this is the fire extinguisher for you. It has a 100% success rate.",
           image: "image_5.jpg"
+        },
+        {
+          id: 211,
+          title: "Fire Extinguisher, Perfect for Pools",
+          snippet: "If you ever find that your pool is on fire then this is the fire extinguisher for you. It has a 100% success rate.",
+          image: "image_14.jpg"
         }
       ]
     },

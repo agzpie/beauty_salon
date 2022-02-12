@@ -2,16 +2,16 @@
     
         <kinesis-container event="scroll" class="flex-container">            
             <div class="image-container">
-                <kinesis-element :strength="100" :type="translate" axis="y">
+                <kinesis-element :strength="100" type="translate" axis="y">
                     <b-img :src="require(`@/assets/images/${ card.image || 'image_1.jpg'}`)" fluid alt="some image" class="image"></b-img>
                 </kinesis-element>
             </div>
             <div class="headers">
-                <kinesis-element :strength="-150" :type="translate" axis="y">
+                <kinesis-element :strength="-150" type="translate" axis="y">
                     <h1 class="header1"> {{ card.title }} </h1>
                 </kinesis-element>
 
-                <kinesis-element :strength="-250" :type="depth_inv" axis="y">  
+                <kinesis-element :strength="-250" type="depth_inv" axis="y">  
                     <h1 class="header2"> {{ card.title }} </h1>
                 </kinesis-element>
             </div>

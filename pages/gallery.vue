@@ -1,6 +1,6 @@
 <template>
   <div class="containerxd">
-  	<span>SERWISY</span>
+  	<span>GALLERIJA</span>
   </div>
 </template>
 

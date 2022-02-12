@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-    <Navbar />
     <div class="about-hero">
         <h1 class="about-header">About us</h1>
         <img src="~/assets/images/team.jpg" alt="some image" class="team" />
